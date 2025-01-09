@@ -50,7 +50,7 @@ Table of contents
     02. Reset
 ====================================== */
 html {font-size: 15px;
-    background: #1d1d1d;
+    background:white;
 }
 body {font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; font-size:14px; color:#6f6f6f; font-weight: 400;line-height: 24px;}
 body, html {height: 100%; -moz-osx-font-smoothing: grayscale;}
@@ -2306,7 +2306,7 @@ header nav.navbar.white-link .header-social-icon a,  nav.navbar.bootsnav.white-l
 header nav.navbar.white-link .header-searchbar a,  nav.navbar.bootsnav.white-link .header-searchbar a,
 header nav.navbar.bootsnav ul.nav.white-link > li > a,  nav.navbar.white-link .heder-menu-button a {
 /* custome     */
-    color: #fff
+    /* color: #333131 */
 
 }
 
@@ -2388,7 +2388,7 @@ header nav.navbar-default, nav.navbar.bootsnav {border-bottom: 0;}
 header nav {width: 100%; top: 0px; z-index: 99; margin-bottom: 0;}
 header nav .nav-header-container {position: relative;}
 header nav .navbar-nav > li > a {color: #232323; font-size: 12px; font-weight: 800; margin:0 20px; padding: 5px 0px 5px; text-transform: uppercase; letter-spacing: 0.015em;}
-header nav .navbar-nav > li > a:hover, header nav .navbar-nav > li > a:focus, header nav .navbar-nav > li.active > a {background: transparent;}
+header nav .navbar-nav > li > a:hover, header nav .navbar-nav > li > a:focus, header nav .navbar-nav > li.active > a {background: transparent;} 
 header nav .navbar-nav > li:last-child a {margin-right: 40px;}
 .navbar-fixed-bottom, .navbar-fixed-top {z-index: 9999}
 header nav.navbar-default .navbar-nav > li > a:hover, header nav.navbar-default .navbar-nav > li > a:focus, header nav.navbar-default .navbar-nav > li.active > a {border-bottom-color: #232323}
@@ -2495,7 +2495,7 @@ header.sticky nav.header-dark-transparent .mobile-toggle:hover span, header.stic
 header.header-appear nav.header-light, header.sticky nav.navbar-fixed-top.header-light, header.sticky nav.navbar-scroll-fixed-top.header-light {background-color: #ffffff; box-shadow: 0 0 35px rgba(0,0,0,0.1);}
 
 /* dark navigation */
-header.header-appear nav.header-dark, header.sticky nav.navbar-fixed-top.header-dark, header.sticky nav.navbar-scroll-fixed-top.header-dark {background-color: #000000;}
+header.header-appear nav.header-dark, header.sticky nav.navbar-fixed-top.header-dark, header.sticky nav.navbar-scroll-fixed-top.header-dark {background-color:#f3eeee;}
 
 /* collepsed menu icon */
 .navbar-default .navbar-toggler .icon-bar, header.sticky .navbar-default.header-light .navbar-toggler .icon-bar, header.sticky .navbar-default.header-light-transparent .navbar-toggler .icon-bar {background: #232323;}
