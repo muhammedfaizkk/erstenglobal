@@ -113,6 +113,40 @@
 .navbar-toggler{
     color: black !important;
 }
+.footer-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em; /* Adjust spacing for a balanced look */
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    text-align: left; /* Aligns text consistently in all columns */
+    padding-left: 5px; /* Add uniform padding for cleaner alignment */
+    margin-bottom: 5px; /* Adjust margin between links */
+}
+
+.footer-links ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+
+.footer-links ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-tagline {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    letter-spacing: 0.04em;
+}
 
 
 /* Responsive Design for Smaller Screens */

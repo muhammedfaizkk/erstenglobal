@@ -99,7 +99,7 @@
         </nav>
         <!-- end navigation -->
     </header>
-    
+
     <section id="home" class="banner wow animate__fadeIn example no-transition p-0">
         <article class="content">
             <div id="rev_slider_1078_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container slider-gradient"
@@ -595,48 +595,46 @@
 
     <footer class="footer-modern" style="background-color: #f2f2f2; padding: 40px 0;">
         <div class="container">
-            <div class="footer-links row"
-                style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+            <div class="footer-links row">
                 <!-- Column 1 -->
-                <div class="col-6 col-md-2 mb-3 " style="display: flex; justify-content: center; align-items: center;">
+                <div class="col-6 col-md-2 mb-3 text-center">
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-uppercase" style="text-decoration: none;">Home</a></li>
-                        <li><a href="#" class="text-uppercase" style="text-decoration: none;">Verticals</a></li>
+                        <li><a href="#" class="footer-link">Home</a></li>
+                        <li><a href="#" class="footer-link">Verticals</a></li>
                     </ul>
                 </div>
                 <!-- Column 2 -->
-                <div class="col-6 col-md-2 mb-3" style="display: flex; justify-content: center; align-items: center;">
+                <div class="col-6 col-md-2 mb-3 text-center">
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-uppercase" style="text-decoration: none;">Brochure</a></li>
-                        <li><a href="#" class="text-uppercase" style="text-decoration: none;">Certifications</a></li>
+                        <li><a href="#" class="footer-link">Brochure</a></li>
+                        <li><a href="#" class="footer-link">Certifications</a></li>
                     </ul>
                 </div>
                 <!-- Column 3 -->
-                <div class="col-6 col-md-2 mb-3" style="display: flex; justify-content: center; align-items: center;">
+                <div class="col-6 col-md-2 mb-3 text-center">
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-uppercase" style="text-decoration: none;">Contact</a></li>
-                        <li><a href="#" class="text-uppercase" style="text-decoration: none;">FAQs</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                        <li><a href="#" class="footer-link">FAQs</a></li>
                     </ul>
                 </div>
                 <!-- Column 4 -->
-                <div class="col-6 col-md-2 mb-3" style="display: flex; justify-content: center; align-items: center;">
+                <div class="col-6 col-md-2 mb-3 text-center">
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-uppercase" style="text-decoration: none;">T&C</a></li>
-                        <li><a href="#" class="text-uppercase" style="text-decoration: none;">Cookies</a></li>
+                        <li><a href="#" class="footer-link">T&C</a></li>
+                        <li><a href="#" class="footer-link">Cookies</a></li>
                     </ul>
                 </div>
                 <!-- Column 5 -->
-                <div class="col-12 col-md-4 mb-3 text-center"
-                    style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                    <img src="images/logo.webp" alt="Vision 2030" class="footer-vision-logo d-block mx-auto mx-md-0"
-                        style="max-width: 200px; margin-bottom: 10px;">
-                    <p class="footer-tagline text-uppercase mt-3" style="font-size: 16px; font-weight: bold;">Energy.
-                        Redefined</p>
+                <!-- Column 5 (Logo Section) -->
+                <div class="col-12 col-md-4 mb-3 d-flex flex-column justify-content-center align-items-center footer-logo-container">
+                    <img src="images/logo.webp" alt="Vision 2030" class="footer-vision-logo">
+                    <p class="footer-tagline">Energy. Redefined</p>
                 </div>
+
             </div>
 
-            <div class="footer-bottom text-center mt-4" style="font-size: 14px;">
-                <p class="mb-0 text-uppercase" style="margin-bottom: 0;">&copy; 2024 Ersternglobal</p>
+            <div class="footer-bottom text-center mt-4">
+                <p class="mb-0 text-uppercase">&copy; 2024 Ersternglobal</p>
             </div>
         </div>
     </footer>
@@ -652,8 +650,9 @@
 
 
 
+
     <script>
-      let timeout;
+        let timeout;
         window.addEventListener('scroll', () => {
             clearTimeout(timeout);  // Reset the timeout on every scroll event
             timeout = setTimeout(() => {
