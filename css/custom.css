@@ -1,8 +1,10 @@
 /* Navbar styles */
 .navbar {
     position: relative; /* Ensures it's above other elements */
-    background-color:#fafafa; /* Navbar background color */
     padding: 10px 20px;
+}
+.dropdown a:hover{
+color: #8aca73 !important;
 }
 
 .navbar .navbar-brand {
@@ -110,7 +112,7 @@
 .black-text a, .black-text { /* Change navbar text color to black */
     color: black !important;
 }
-.navbar-toggler{
+.icon-bar{
     color: black !important;
 }
 .footer-link {

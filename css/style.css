@@ -2300,7 +2300,7 @@ header nav.menu-logo-center .navbar-nav > li:last-child a {margin-right: 35px}
 header nav.navbar a:not([href]):not([tabindex]):focus, header nav.navbar a:not([href]):not([tabindex]):hover {cursor: pointer;}
 
 /* header navigation color and logo */
-header nav.navbar .navbar-nav > li > a, nav.navbar.bootsnav ul.nav > li > a{color: #89bf6f; cursor: pointer;}
+header nav.navbar .navbar-nav > li > a, nav.navbar.bootsnav ul.nav > li > a{color: #ffff; cursor: pointer;}
 header nav.navbar.white-link .navbar-nav > li > a, nav.navbar.bootsnav.white-link ul.nav > li > a,
 header nav.navbar.white-link .header-social-icon a,  nav.navbar.bootsnav.white-link .header-social-icon a,
 header nav.navbar.white-link .header-searchbar a,  nav.navbar.bootsnav.white-link .header-searchbar a,
@@ -2336,7 +2336,7 @@ header .left-nav .sidebar-part1 a.logo img {max-height:inherit;}
 /* header animation */
 .navbar-top {position: fixed;top: 16px; left: 0; right: 0; transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -ms-transition-duration: 0.3s; -o-transition-duration: 0.3s;}
 .sticky .navbar-top {top: -160px; transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -ms-transition-duration: 0.3s; -o-transition-duration: 0.3s;}
-.sticky.header-appear .navbar-top.navbar-transparent-no-sticky, .sticky.header-appear .navbar-fixed-top.navbar-transparent-no-sticky {top: -160px; transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -ms-transition-duration: 0.3s; -o-transition-duration: 0.3s;}
+.sticky.header-appear .navbar-top.navbar-transparent-no-sticky, .sticky.header-appear .navbar-fixed-top.navbar-transparent-no-sticky {position:fixed;top: -160px; transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -ms-transition-duration: 0.3s; -o-transition-duration: 0.3s;}
 .sticky.header-appear .navbar-top {top: 0; transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -ms-transition-duration: 0.3s; -o-transition-duration: 0.3s;}
 
 header .bootsnav .dropdown .animated {-webkit-animation-duration: 0.3s; -moz-animation-duration: 0.3s; -ms-animation-duration: 0.3s; -o-animation-duration: 0.3s; animation-duration: 0.3s; -webkit-animation-fill-mode: both; -moz-animation-fill-mode: both; -ms-animation-fill-mode: both; -o-animation-fill-mode: both; animation-fill-mode: both;}
@@ -2359,7 +2359,7 @@ header.header-appear nav.bootsnav.header-light-transparent .navbar-nav > li.acti
 header nav.navbar.white-link .navbar-nav > li.active > a, nav.navbar.bootsnav.white-link ul.nav > li.active > a, header nav.navbar.bootsnav ul.nav.white-link > li.active > a, header.header-appear nav.header-dark-transparent .navbar-nav > li.active > a, header.header-appear nav.header-dark .navbar-nav > li.active > a, header.sticky nav.header-dark .navbar-nav > li.active > a, header.sticky nav.header-dark-transparent .navbar-nav > li.active > a, header.sticky nav.navbar.bootsnav.header-dark-transparent.white-link .navbar-nav > li.active > a {color: rgba(255,255,255,0.6)}
 header.sticky nav.navbar-fixed-top.header-light-transparent.white-link .navbar-nav > li.active > a, header.sticky nav.navbar-fixed-top.header-light.white-link .navbar-nav > li.active > a {color: rgba(0,0,0,0.6)}
 header.sticky nav.navbar.white-link .navbar-nav > li.active > a, header.sticky nav.navbar.bootsnav.white-link ul.nav > li.active > a {color: rgba(0,0,0,0.6);}
-header.sticky nav.navbar.header-dark.white-link .navbar-nav > li.active > a, header.sticky nav.navbar.bootsnav.header-dark.white-link ul.nav > li.active > a {color: rgba(255,255,255,0.6);}
+/* header.sticky nav.navbar.header-dark.white-link .navbar-nav > li.active > a, header.sticky nav.navbar.bootsnav.header-dark.white-link ul.nav > li.active > a {color: rgba(255, 255, 255, 0.6);} */
 
 header.header-appear nav.bootsnav.header-light-transparent .navbar-nav > li > a.active, header.header-appear nav.bootsnav.header-light .navbar-nav > li > a.active, header nav.navbar .navbar-nav > li > a.active, nav.navbar.bootsnav ul.nav > li > a.active {color: rgba(0,0,0,0.6)}
 header nav.navbar.white-link .navbar-nav > li > a.active, nav.navbar.bootsnav.white-link ul.nav > li > a.active, header nav.navbar.bootsnav ul.nav.white-link > li > a.active, header.header-appear nav.header-dark-transparent .navbar-nav > li > a.active, header.header-appear nav.header-dark .navbar-nav > li > a.active, header.sticky nav.header-dark .navbar-nav > li > a.active, header.sticky nav.header-dark-transparent .navbar-nav > li > a.active {color: rgba(255,255,255,0.6)}
@@ -2388,7 +2388,7 @@ header nav.navbar-default, nav.navbar.bootsnav {border-bottom: 0;}
 header nav {width: 100%; top: 0px; z-index: 99; margin-bottom: 0;}
 header nav .nav-header-container {position: relative;}
 header nav .navbar-nav > li > a {color: #232323; font-size: 12px; font-weight: 800; margin:0 20px; padding: 5px 0px 5px; text-transform: uppercase; letter-spacing: 0.015em;}
-header nav .navbar-nav > li > a:hover, header nav .navbar-nav > li > a:focus, header nav .navbar-nav > li.active > a {background: transparent;} 
+header nav .navbar-nav > li > a:hover, header nav .navbar-nav > li > a:focus, header nav .navbar-nav > li.active > a {background: transparent;} c
 header nav .navbar-nav > li:last-child a {margin-right: 40px;}
 .navbar-fixed-bottom, .navbar-fixed-top {z-index: 9999}
 header nav.navbar-default .navbar-nav > li > a:hover, header nav.navbar-default .navbar-nav > li > a:focus, header nav.navbar-default .navbar-nav > li.active > a {border-bottom-color: #232323}
@@ -2484,7 +2484,7 @@ header.sticky nav.header-light-transparent .heder-menu-button .mobile-toggle spa
 /* dark transparent navigation */
 header.header-appear nav.header-dark-transparent, header.sticky nav.navbar-fixed-top.header-dark-transparent, header.sticky nav.navbar-scroll-fixed-top.header-dark-transparent {background: rgba(23, 23, 23, 0.85);}
 header.header-appear nav.header-dark-transparent .separator-line-verticle-small, header.header-appear nav.header-dark .separator-line-verticle-small {background: #ffffff}
-header.header-appear nav.header-dark-transparent .navbar-nav > li > a, header.header-appear nav.header-dark .navbar-nav > li > a, header.sticky nav.header-dark .navbar-nav > li > a, header.sticky nav.header-dark-transparent .navbar-nav > li > a {color: #ffffff}
+header.header-appear nav.header-dark-transparent .navbar-nav > li > a, header.header-appear nav.header-dark .navbar-nav > li > a, header.sticky nav.header-dark .navbar-nav > li > a, header.sticky nav.header-dark-transparent .navbar-nav > li > a {color:black}
 header.header-appear nav.header-dark-transparent .header-social-icon a, header.header-appear nav.header-dark .header-social-icon a, header.sticky nav.header-dark .header-social-icon a, header.sticky nav.header-dark-transparent .header-social-icon a{color: #ffffff}
 header.header-appear nav.header-dark-transparent .search-button, header.header-appear nav.header-dark-transparent .right-menu-button, header.header-appear nav.header-dark .search-button, header.header-appear nav.header-dark .right-menu-button, header.sticky nav.header-dark .search-button, header.sticky nav.header-dark .right-menu-button, header.sticky nav.header-dark-transparent .search-button, header.sticky nav.header-dark-transparent .right-menu-button{color:#ffffff}
 header.sticky nav.header-dark-transparent .header-social-icon, header.sticky nav.header-dark .header-social-icon,header.sticky nav.header-dark-transparent .header-searchbar, header.sticky nav.header-dark .header-searchbar {border-left: 1px solid rgba(255,255,255,0.4);}
