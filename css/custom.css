@@ -152,7 +152,8 @@ color: #8aca73 !important;
 color: #383838;
 }
 .reliabilityicon{
-
+   height: 80px;
+   width: 80px;
     object-fit:cover;
 }
 .feature-box{
