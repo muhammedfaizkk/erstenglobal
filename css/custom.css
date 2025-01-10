@@ -151,13 +151,14 @@ color: #8aca73 !important;
 .subheadings{
 color: #383838;
 }
-.icon-img{
-    height: 120px;
+.reliabilityicon{
+    width:91px;
     object-fit:cover;
 }
 .feature-box{
 height: 300px;
 }
+
 /* Responsive Design for Smaller Screens */
 @media (max-width: 767px) {
     .footer-links .col {
