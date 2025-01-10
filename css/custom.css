@@ -152,11 +152,17 @@ color: #8aca73 !important;
 color: #383838;
 }
 .reliabilityicon{
-    width:91px;
+
     object-fit:cover;
 }
 .feature-box{
 height: 300px;
+}
+.dark-gray-600{
+    color: #404040;
+}
+.dark-gray-550{
+    color: #4d4d4d;
 }
 
 /* Responsive Design for Smaller Screens */
