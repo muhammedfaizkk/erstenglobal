@@ -1,6 +1,4 @@
-/* Navbar styles */
 .navbar {
-    position: relative; /* Ensures it's above other elements */
     padding: 10px 20px;
 }
 .dropdown a:hover{
@@ -8,12 +6,12 @@ color: #8aca73 !important;
 }
 
 .navbar .navbar-brand {
-    color: rgb(221, 212, 212); /* Navbar brand text color */
+    color: rgb(221, 212, 212); 
 }
 .header-dark{
    color: #1a1a1a;
 }
-/* Flag mark styling */
+
 .bahrain-flag-mark {
     position: sticky;
     top:18px; /* Adjust to desired vertical position */
@@ -150,8 +148,16 @@ color: #8aca73 !important;
     letter-spacing: 0.04em;
 }
 
-
-
+.subheadings{
+color: #383838;
+}
+.icon-img{
+    height: 120px;
+    object-fit:cover;
+}
+.feature-box{
+height: 300px;
+}
 /* Responsive Design for Smaller Screens */
 @media (max-width: 767px) {
     .footer-links .col {
