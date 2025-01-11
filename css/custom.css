@@ -21,7 +21,7 @@ color: #8aca73 !important;
     font-weight: bold;
     padding: 10px 20px;
     font-size: 14px;
-    border-radius: 10px; /* Added missing value for proper rounded corners */
+    border-radius: 6px; /* Added missing value for proper rounded corners */
     z-index: 9999; /* Ensure it's above other content */
     display: flex;
     align-items: center;
