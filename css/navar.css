@@ -1,58 +1,40 @@
-.navbar {
-    background: transparent;
-    transition: background-color 0.3s ease;
-    padding:20px 0px;
-    font-size: 50px !important;
-}
-
-.navbar.scrolled {
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-nav {
-    flex-direction: row;
-    justify-content: center;
+/* Default navbar styles */
+.navbarss {
+    transition: background-color 0.3s, color 0.3s;
+    position: fixed !important;
     width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; /* Ensure navbar is above other content */
 }
 
-.navbar-brand {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+/* Navbar when scrolled inside the banner section */
+.navbar-transparent {
+    background-color: transparent !important; 
+    color: rgb(214, 38, 38)  !important; /* White text */
 }
 
-/* Text color for navbar links */
-.navbar .nav-link {
-    color: white;
-    transition: color 0.3s ease;
+.navbar-transparent .nav-link,
+.navbar-transparent .logo {
+    color: white; /* White color for links and logo */
 }
 
-.navbar.scrolled .nav-link {
-    color: black;
+.navbar-transparent .dropdown-menu {
+    background-color: transparent; /* Transparent dropdown menu */
 }
 
-@media (max-width: 768px) {
-    .navbar-brand {
-        position: static;
-        transform: none;
-    }
-
-    .navbar-toggler {
-        order: 1;
-    }
-
-    .navbar-collapse {
-        order: 2;
-        width: 100%;
-    }
-
-    .navbar-nav {
-        justify-content: flex-start;
-    }
+/* Navbar when scrolled past the banner section */
+.navbar-scrolled {
+    background-color: rgba(var(--bs-light-rgb)) !important; /* White background */
+    color: black !important; /* Black text */
 }
 
+.navbar-scrolled .nav-link,
+.navbar-scrolled .logo {
+    color: black; /* Black color for links and logo */
+}
 
-.nav-logo{
-  width: 230px;
+.navbar-scrolled .dropdown-menu {
+    background-color: white; /* White background for dropdown menu */
 }

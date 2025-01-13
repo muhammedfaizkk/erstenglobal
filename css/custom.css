@@ -152,11 +152,7 @@ color: #8aca73 !important;
 .subheadings{
 color: #383838;
 }
-.reliabilityicon{
-   height: 80px;
-   width: 80px;
-    object-fit:cover;
-}
+
 .feature-box{
 height: 300px;
 }
@@ -165,6 +161,9 @@ height: 300px;
 }
 .dark-gray-550{
     color: #4d4d4d;
+}
+.feature-box-image img{
+    border-radius:10px;
 }
 
 /* Responsive Design for Smaller Screens */

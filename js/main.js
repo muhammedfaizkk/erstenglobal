@@ -35,60 +35,60 @@
     $(window).on('scroll', init_scroll_navigate);
 
 
-    function init_scroll_navigate() {
+    var lastScroll = 0; // Track last scroll position
 
-        /* one page navigation */
-        var menu_links = $(".navbar-nav li a");
-        var scrollPos = $(document).scrollTop();
-        scrollPos = scrollPos + 60;
-        menu_links.each(function () {
-            var currLink = $(this);
-            var hasPos = currLink.attr("href").indexOf("#");
-            if (hasPos > -1) {
-                var res = currLink.attr("href").substring(hasPos);
-                if (res != '' && res != '#' && $(res).length > 0) {
-                    var refElement = $(res);
-                    if (refElement.offset().top <= scrollPos && refElement.offset().top + refElement.height() > scrollPos) {
-                        menu_links.not(currLink).removeClass("active");
-                        currLink.addClass("active");
-                    } else {
-                        currLink.removeClass("active");
-                    }
-                }
+function init_scroll_navigate() {
+    var menu_links = $(".navbar-nav li a");
+    var scrollPos = $(document).scrollTop() + 60; // Offset for sticky header height
+
+    // One-page navigation: Highlight current menu item based on scroll position
+    menu_links.each(function () {
+        var currLink = $(this);
+        var targetId = currLink.attr("href").split("#")[1]; // Extract target section ID
+        if (targetId && $("#" + targetId).length) {
+            var targetElement = $("#" + targetId);
+            if (targetElement.offset().top <= scrollPos && targetElement.offset().top + targetElement.height() > scrollPos) {
+                menu_links.removeClass("active");
+                currLink.addClass("active");
+            } else {
+                currLink.removeClass("active");
             }
-        });
-
-        /* background color slider */
-        var $window = $(window),
-                $body = $('.bg-background-fade'),
-                $panel = $('.color-code');
-        var scroll = $window.scrollTop() + ($window.height() / 2);
-        $panel.each(function () {
-            var _self = $(this);
-            if (_self.position().top <= scroll && _self.position().top + _self.height() > scroll) {
-                $body.removeClass(function (index, css) {
-                    return (css.match(/(^|\s)color-\S+/g) || []).join(' ');
-                });
-                $body.addClass('color-' + _self.data('color'));
-            }
-        });
-
-        /* sticky nav */
-        setHeaderPosition()
-
-        /* header appear on scroll up */
-        var st = $(this).scrollTop();
-        if (st >= lastScroll) {
-            $('.sticky').removeClass('header-appear');
-        } else {
-            $('.sticky').addClass('header-appear');
         }
+    });
 
-        lastScroll = st;
-        var headerHeight = $('nav').outerHeight();
-        if (lastScroll <= headerHeight)
-            $('header').removeClass('header-appear');
+    // Background fade change based on scroll
+    var $body = $('.bg-background-fade'),
+        $panels = $('.color-code'),
+        scrollMid = $(window).scrollTop() + ($(window).height() / 2);
+
+    $panels.each(function () {
+        var $this = $(this);
+        if ($this.position().top <= scrollMid && $this.position().top + $this.height() > scrollMid) {
+            $body.removeClass(function (index, css) {
+                return (css.match(/(^|\s)color-\S+/g) || []).join(' ');
+            }).addClass('color-' + $this.data('color'));
+        }
+    });
+
+    // Sticky header: Appear on scroll up, hide on scroll down
+    var st = $(window).scrollTop(),
+        $sticky = $('.sticky');
+
+    if (st > lastScroll) {
+        $sticky.removeClass('header-appear');
+    } else {
+        $sticky.addClass('header-appear');
     }
+
+    lastScroll = st;
+    if (st <= $('nav').outerHeight()) {
+        $('header').removeClass('header-appear');
+    }
+}
+
+// Initialize on scroll
+$(window).on('scroll', init_scroll_navigate).trigger('scroll');
+
 
     /* header search */
     function ScrollStop() {

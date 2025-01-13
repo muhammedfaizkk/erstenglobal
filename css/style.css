@@ -2356,8 +2356,8 @@ header.sticky nav.navbar.white-link .navbar-nav > li > a:hover, header.sticky na
 header.sticky nav.navbar.header-dark.white-link .navbar-nav > li > a:hover, header.sticky nav.navbar.bootsnav.header-dark.white-link ul.nav > li > a:hover, header.sticky nav.header-dark .header-social-icon a:hover {color: rgba(255,255,255,0.6);}
 
 header.header-appear nav.bootsnav.header-light-transparent .navbar-nav > li.active > a, header.header-appear nav.bootsnav.header-light .navbar-nav > li.active > a, header nav.navbar .navbar-nav > li.active > a, nav.navbar.bootsnav ul.nav > li.active > a {color: rgba(0,0,0,0.6)}
-header nav.navbar.white-link .navbar-nav > li.active > a, nav.navbar.bootsnav.white-link ul.nav > li.active > a, header nav.navbar.bootsnav ul.nav.white-link > li.active > a, header.header-appear nav.header-dark-transparent .navbar-nav > li.active > a, header.header-appear nav.header-dark .navbar-nav > li.active > a, header.sticky nav.header-dark .navbar-nav > li.active > a, header.sticky nav.header-dark-transparent .navbar-nav > li.active > a, header.sticky nav.navbar.bootsnav.header-dark-transparent.white-link .navbar-nav > li.active > a {color: rgba(255,255,255,0.6)}
-header.sticky nav.navbar-fixed-top.header-light-transparent.white-link .navbar-nav > li.active > a, header.sticky nav.navbar-fixed-top.header-light.white-link .navbar-nav > li.active > a {color: rgba(0,0,0,0.6)}
+header nav.navbar.white-link .navbar-nav > li.active > a, nav.navbar.bootsnav.white-link ul.nav > li.active > a, header nav.navbar.bootsnav ul.nav.white-link > li.active > a, header.header-appear nav.header-dark-transparent .navbar-nav > li.active > a, header.header-appear nav.header-dark .navbar-nav > li.active > a, header.sticky nav.header-dark .navbar-nav > li.active > a, header.sticky nav.header-dark-transparent .navbar-nav > li.active > a,
+header.sticky nav.navbar-fixed-top.header-light-transparent.white-link .navbar-nav > li.active > a, header.sticky nav.navbar-fixed-top.header-light.white-link .navbar-nav > li.active > a {color:#8aca73}
 header.sticky nav.navbar.white-link .navbar-nav > li.active > a, header.sticky nav.navbar.bootsnav.white-link ul.nav > li.active > a {color: rgba(0,0,0,0.6);}
 header.sticky nav.navbar.header-dark.white-link .navbar-nav > li.active > a, header.sticky nav.navbar.bootsnav.header-dark.white-link ul.nav > li.active > a {color:#8aca73;}
 
@@ -2483,7 +2483,7 @@ header.sticky nav.header-light-transparent .heder-menu-button .mobile-toggle spa
 /* dark transparent navigation */
 header.header-appear nav.header-dark-transparent, header.sticky nav.navbar-fixed-top.header-dark-transparent, header.sticky nav.navbar-scroll-fixed-top.header-dark-transparent {background: rgba(23, 23, 23, 0.85);}
 header.header-appear nav.header-dark-transparent .separator-line-verticle-small, header.header-appear nav.header-dark .separator-line-verticle-small {background: #ffffff}
-header.header-appear nav.header-dark-transparent .navbar-nav > li > a, header.header-appear nav.header-dark .navbar-nav > li > a, header.sticky nav.header-dark .navbar-nav > li > a, header.sticky nav.header-dark-transparent .navbar-nav > li > a {color:black}
+header.header-appear nav.header-dark-transparent .navbar-nav > li > a, header.header-appear nav.header-dark .navbar-nav > li > a, header.sticky nav.header-dark .navbar-nav > li > a
 header.header-appear nav.header-dark-transparent .header-social-icon a, header.header-appear nav.header-dark .header-social-icon a, header.sticky nav.header-dark .header-social-icon a, header.sticky nav.header-dark-transparent .header-social-icon a{color: #ffffff}
 header.header-appear nav.header-dark-transparent .search-button, header.header-appear nav.header-dark-transparent .right-menu-button, header.header-appear nav.header-dark .search-button, header.header-appear nav.header-dark .right-menu-button, header.sticky nav.header-dark .search-button, header.sticky nav.header-dark .right-menu-button, header.sticky nav.header-dark-transparent .search-button, header.sticky nav.header-dark-transparent .right-menu-button{color:#ffffff}
 header.sticky nav.header-dark-transparent .header-social-icon, header.sticky nav.header-dark .header-social-icon,header.sticky nav.header-dark-transparent .header-searchbar, header.sticky nav.header-dark .header-searchbar {border-left: 1px solid rgba(255,255,255,0.4);}
@@ -2593,7 +2593,7 @@ header nav.nav-box-width {padding: 0 50px;}
 .big-menu-close {background: #fff; position: absolute; right: 0; width: 40px; height: 40px; color: #232323;}
 
 /* dropdown menu */
-nav.navbar.navbar-default ul.nav > li > a {padding:20px 0; background: transparent; border-color: transparent; font-weight: 600; display: block;}
+nav.navbar.navbar-default ul.nav > li > a {padding:20px 0; background: transparent; border-color: transparent; font-weight: 600; display: block;color: #000;}
 nav.navbar.navbar-default ul.nav > li.dropdown > a.dropdown-toggle::after, nav.navbar.sidebar-nav ul.nav > li.dropdown > a.dropdown-toggle::after {content: ""; vertical-align: middle; position: relative; top: -1px; margin-top: 0;}
 nav.navbar.navbar-default ul li.dropdown ul.dropdown-menu > li:last-child {border-bottom: 0; border-bottom: 0;}
 nav.navbar.navbar-default ul li.dropdown .dropdown-menu li > a:hover  {color: #fff; background:  transparent; left: 5px;}

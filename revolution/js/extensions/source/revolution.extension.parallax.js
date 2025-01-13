@@ -4,6 +4,8 @@
  * @requires jquery.themepunch.revolution.js
  * @author ThemePunch
 *********************************************/
+
+
 (function($) {
 "use strict";
 var _R = jQuery.fn.revolution,
@@ -39,8 +41,7 @@ jQuery.extend(true,_R, {
 			if (_.type=="3D" || _.type=="3d") {
 				li.find('.slotholder').wrapAll('<div class="dddwrapper" style="width:100%;height:100%;position:absolute;top:0px;left:0px;overflow:hidden"></div>');				
 				li.find('.tp-parallax-wrap').wrapAll('<div class="dddwrapper-layer" style="width:100%;height:100%;position:absolute;top:0px;left:0px;z-index:5;overflow:'+_.ddd_layer_overflow+';"></div>');				
-
-				// MOVE THE REMOVED 3D LAYERS OUT OF THE PARALLAX GROUP					
+				
 				li.find('.rs-parallaxlevel-tobggroup').closest('.tp-parallax-wrap').wrapAll('<div class="dddwrapper-layertobggroup" style="position:absolute;top:0px;left:0px;z-index:50;width:100%;height:100%"></div>');
 
 				var dddw = li.find('.dddwrapper'),
@@ -267,7 +268,7 @@ jQuery.extend(true,_R, {
 				}			 
 		}
 				
-		// COLLECT ALL ELEMENTS WHICH NEED FADE IN/OUT ON PARALLAX SCROLL
+		
 		var _s = opt.scrolleffect;
 		_s.bgs = new Array();		
 
@@ -300,11 +301,11 @@ jQuery.extend(true,_R, {
 					_R.scrollHandling(opt,true);											
 				}, {passive:true});
 
-				/*window.addEventListener('mousewheel',function(e) {
+				window.addEventListener('mousewheel',function(e) {
 					_R.scrollHandling(opt,true);
 				}, {passive:true});
 
-				window.addEventListener('DOMMouseScroll',function() {_R.scrollHandling(opt,true);}, {passive:true});*/
+				window.addEventListener('DOMMouseScroll',function() {_R.scrollHandling(opt,true);}, {passive:true});
 			}		
 				
 		}		
@@ -313,7 +314,6 @@ jQuery.extend(true,_R, {
 
 
 
-	//	-	SET POST OF SCROLL PARALLAX	-
 	scrollHandling : function(opt,fromMouse,speedoverwrite) {	
 		opt.lastwindowheight = opt.lastwindowheight || window.innerHeight;
 		opt.conh = opt.conh===0 || opt.conh===undefined ? opt.infullscreenmode ? opt.minHeight : opt.c.height() : opt.conh;
@@ -332,8 +332,7 @@ jQuery.extend(true,_R, {
 
 		if (_v.enable) {
 			var area = 1-Math.abs(proc);
-			area = area<0 ? 0 : area;
-			// To Make sure it is not any more in %			
+			area = area<0 ? 0 : area;		
 			if (!jQuery.isNumeric(_v.visible_area))
 			 if (_v.visible_area.indexOf('%')!==-1) 
 				_v.visible_area = parseInt(_v.visible_area)/100;
@@ -351,7 +350,7 @@ jQuery.extend(true,_R, {
 			}
 		}
 					
-		// SCROLL BASED PARALLAX EFFECT 
+		
 		if (_ISM && _.disable_onmobile=="on") return false;
 
 		if (_.type!="3d" && _.type!="3D") {
@@ -378,7 +377,6 @@ jQuery.extend(true,_R, {
 				}							
 		}
 
-		// SCROLL BASED BLUR,FADE,GRAYSCALE EFFECT
 		var _s = opt.scrolleffect;
 		if (_s.on && (_s.disable_on_mobile!=="on" || !_ISM)) { 
 			
@@ -429,7 +427,7 @@ jQuery.extend(true,_R, {
 
 				if (_s.scale==="on") {					
 					var scalelevel = fadelevel;
-					//seo.scale = scalelevel;
+					seo.scale = scalelevel;
 					punchgs.TweenLite.set(jQuery('.tp-kbimg-wrap'),{transformOrigin:"50% 50%",scale:scalelevel,force3D:true})
 				}
 
@@ -460,6 +458,4 @@ jQuery.extend(true,_R, {
 
 function saveLastScroll(opt,st) { opt.lastscrolltop = st;}
 
-
-//// END OF PARALLAX EFFECT	
 })(jQuery);
