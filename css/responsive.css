@@ -2759,7 +2759,7 @@
     nav .accordion-menu {padding: 26px 0 26px 0;}
     .sticky nav .accordion-menu {padding: 26px 0 26px 0;}
     nav.navbar.bootsnav.menu-center ul.nav.navbar-center {width:100%;}
-    .center-logo {left: 0; position: relative; max-width:50%; margin: 0; top: 0; transform:  none; padding: 26px 15px 26px 0;}
+    .center-logo {left: 0; position: relative; max-width:50%; margin: 0; top: 0; transform:  none; padding:0px;}
     .navbar-nav li {position: relative}
     nav.navbar.bootsnav li.dropdown ul.mega-menu-full > li { padding: 0; border: 0; }
     nav.navbar.bootsnav .simple-dropdown .dropdown-menu > li { padding-left: 0; padding-right: 0; }
