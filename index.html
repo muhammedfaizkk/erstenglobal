@@ -35,70 +35,54 @@
     <header>
         <!-- start navigation -->
         <nav
-            class="navbar navbarss navbar-default bootsnav header-dark background-transparent white-link menu-logo-center navbar-expand-lg">
-            <div class="container-lg nav-header-container">
-                <!-- start logo -->
-                <div class="center-logo">
-                    <a href="index.html" title="Pofo" class="logo"><img src="images/logo.webp"
-                            data-at2x="images/logo.webp" class="logo-dark" alt="Pofo"><img src="images/logo.webp"
-                            data-at2x="images/logo.webp" alt="Pofo" class="logo-light default"></a>
-                </div>
-                <!-- end logo -->
-                <div class="col col-lg-12 accordion-menu">
-                    <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse"
-                        data-bs-target="#navbar-collapse-toggle-1">
-                        <span class="sr-only">toggle navigation</span>
-                        <span class="icon-bar" style="background-color: black;"></span>
-                        <span class="icon-bar" style="background-color: black;"></span>
-                        <span class="icon-bar" style="background-color: black;"></span>
-
-                    </button>
-                    <div class="navbar-collapse collapse justify-content-between" id="navbar-collapse-toggle-1">
-                        <ul class="nav navbar-nav alt-font text-normal w-40 md-w-100 text-sm-start justify-content-end"
-                            data-in="animate__fadeIn" data-out="animate__fadeOut">
-                            <!-- start menu item -->
-                            <li class="dropdown megamenu-fw">
-                                <a href="index.html">Home</a><i class="fa-solid fa-angle-down dropdown-toggle"
-                                    data-bs-toggle="dropdown" aria-hidden="true"></i>
-
-                            </li>
-                            <!-- end menu item -->
-                            <li class="dropdown "><a href="about-us.html">About Us</a><i
-                                    class="fa-solid fa-angle-down dropdown-toggle" data-bs-toggle="dropdown"
-                                    aria-hidden="true"></i>
-                                <!-- start sub menu -->
-
-                            </li>
-
+    class="custom-navbar navbar navbar-default bootsnav header-dark background-transparent white-link menu-logo-center navbar-expand-lg">
+    <div class="container-lg nav-header-container">
+        <!-- Logo Section -->
+        <div class="center-logo">
+            <a href="index.html" title="Pofo" class="logo mt-2">
+                <img src="images/logonav.webp" data-at2x="images/logonav.webp" class="logo-dark" alt="Pofo">
+                <img src="images/logonav.webp" data-at2x="images/logonav.webp" alt="Pofo" class="logo-light default">
+            </a>
+        </div>
+        <!-- Navigation Button for Mobile -->
+        <div class="col col-lg-12 accordion-menu">
+            <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse"
+                data-bs-target="#navbar-collapse-toggle-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="custom-icon-bar"></span>
+                <span class="custom-icon-bar"></span>
+                <span class="custom-icon-bar"></span>
+            </button>
+            <!-- Menu Links -->
+            <div class="navbar-collapse collapse justify-content-between" id="navbar-collapse-toggle-1">
+                <ul class="nav navbar-nav alt-font text-normal w-40 md-w-100 text-sm-start justify-content-end">
+                    <li class="dropdown megamenu-fw">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="dropdown"><a href="about-us.html">About Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right no-margin alt-font text-normal w-40 md-w-100 justify-content-start">
+                    <li class="dropdown simple-dropdown">
+                        <a href="energy.html" title="Blog">VERTICALS</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="energy.html">ENERGY</a></li>
+                            <li><a href="hospitality.html">HOSPITALITY</a></li>
+                            <li><a href="fwc.html">FWC</a></li>
                         </ul>
-                        <ul class="nav navbar-nav navbar-right no-margin alt-font text-normal w-40 md-w-100 justify-content-start"
-                            data-in="animate__fadeIn" data-out="animate__fadeOut">
-                            <li class="dropdown simple-dropdown"><a href="energy.html" title="Blog">VERTICALS</a><i
-                                    class="fa-solid fa-angle-down dropdown-toggle" data-bs-toggle="dropdown"
-                                    aria-hidden="true"></i>
-                                <!-- start sub menu -->
-                                <ul class="dropdown-menu" role="menu">
-                                    <li class=""><a href="energy.html">ENERGY</a></li>
-                                    <li class=""><a href="hospitality.html">HOSPITALITY </a></li>
-                                    <li class=""><a href="fwc.html">FWC </a></li>
-
-                                </ul>
-                                <!-- end sub menu -->
-                            </li>
-                            <li class="dropdown megamenu-fw">
-                                <a href="contact.html">Contact Us</a><i class="fa-solid fa-angle-down dropdown-toggle"
-                                    data-bs-toggle="dropdown" aria-hidden="true"></i>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="bahrain-flag-mark">
-                    <img src="images/bahrain_551990.png" alt="Bahrain Flag" class="bahrain-flag-icon">
-                    <span>Bahrain</span>
-                </div>
+                    </li>
+                    <li class="dropdown megamenu-fw">
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+        <div class="bahrain-flag-mark">
+            <img src="images/bahrain_551990.png" alt="Bahrain Flag" class="bahrain-flag-icon">
+            <span>Bahrain</span>
+        </div>
+    </div>
+</nav>
+
         <!-- end navigation -->
     </header>
     <!-- end header -->
@@ -287,19 +271,19 @@
                     </ul>
                 </div>
             </div>
-            <!-- end revolution slider -->
+
         </article>
     </section>
 
 
 
 
-    <section class="wow animate__fadeIn margin-30px-top">
+    <section class="wow animate__fadeIn margin-30px-top" style="padding:30px 0px;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8 col-md-11 text-center margin-seven-bottom sm-margin-30px-bottom">
                     <div class=" text-medium-gray margin-5px-bottom text-uppercase text-small">
-                        ErstenGlobal
+                        Ersten Global
                     </div>
                     <h6 class="font-weight-400 fs-5 m-0 mt-4 dark-gray-500">
                         Ersten Global over the last few years has been continually evolving to position itself as a
@@ -325,15 +309,28 @@
                 <!-- end feature box item -->
 
                 <!-- feature box item -->
-                <div class="col last-paragraph-no-margin wow animate__fadeInUp" data-wow-delay="0.2s">
+                <!-- <div class="col last-paragraph-no-margin wow animate__fadeInUp" data-wow-delay="0.2s">
                     <div class="feature-box">
                         <div class="content text-center">
-                            <img class="reliabilityicon mb-2" src="./images/icons/icon-2.png" alt="">
+                            <img class="reliabilityicon " src="./images/icons/icon-2.png" alt="">
                             <div class="text-medium alt-font text-capitalize dark-gray-550 mb-2">
                                 RELIABILITY
                             </div>
                             <p class="w-100 mx-auto text-center">
                                 DELIVERING CONSISTENT QUALITY WITH TRUST BUILT THROUGH PERFORMANCE
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col last-paragraph-no-margin wow animate__fadeInUp">
+                    <div class="feature-box">
+                        <div class="content text-center">
+                            <img class=" reliabilityicon mb-2" src="./images/icons/9_Original.png" alt="">
+                            <div class="text-medium alt-font text-capitalize dark-gray-550 mb-2">
+                                RELIABILITY
+                            </div>
+                            <p class="w-100 mx-auto text-center text-uppercase">
+                                CREATING SOLUTIONS THAT DRIVE EXCELLENCE TO BREAK ALL BARRIERS
                             </p>
                         </div>
                     </div>
@@ -359,7 +356,7 @@
                 <div class="col last-paragraph-no-margin wow animate__fadeInUp" data-wow-delay="0.6s">
                     <div class="feature-box">
                         <div class="content">
-                            <img class="mb-2 reliabilityicon" src="./images/icons/icon-1.png" alt="">
+                            <img class="mb-2 reliabilityicon" src="./images/icons/icon-3.png" alt="">
                             <div class="text-medium alt-font text-capitalize mb-2 dark-gray-550">
                                 CREATIVITY
                             </div>
@@ -373,7 +370,7 @@
         </div>
     </section>
 
-    <section class="wow animate__fadeIn">
+    <section class="wow animate__fadeIn" style="padding:30px 0px;">
         <div class="container">
             <div class="row text-center">
                 <div class="col-12 margin-100px-bottom md-margin-70px-bottom sm-margin-50px-bottom">
@@ -455,7 +452,7 @@
             </div>
         </div>
     </section>
-    <section class=" wow animate__fadeIn">
+    <section class=" wow animate__fadeIn" style="padding:30px 0px;">
 
         <div class="container-fluid xs-padding-30px-tb">
 
@@ -516,10 +513,11 @@
                 <!-- start feature box item -->
             </div>
         </div>
+   
+
     </section>
 
-
-
+    
 
     <footer class="footer-modern mt-5 bg-light py-5 text-uppercase">
         <div class="container">
@@ -527,7 +525,6 @@
                 <!-- Logo Column -->
                 <div class="col-12 col-md-3 text-center text-md-start">
                     <img src="images/logo.webp" alt="Vision 2030" class="img-fluid mb-2" style="max-width: 180px;">
-                    <p class="text-muted mb-0 ps-md-5">Globally. Connected.</p>
                 </div>
 
                 <!-- Links Column Group -->
@@ -565,11 +562,13 @@
                 </div>
             </div>
             <div class="border-top pt-3 text-center">
-                <p class="mb-0 text-uppercase">&copy; 2025 Erstenglobal</p>
+                <p class="mb-0 text-uppercase">&copy; 2025 Ersten global</p>
             </div>
         </div>
+        <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
     </footer>
-    <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
+    
+    
 
 
 
@@ -580,23 +579,19 @@
         document.addEventListener('DOMContentLoaded', function () {
             window.addEventListener('scroll', function () {
                 var banner = document.querySelector('.bannersection');
-                var navbar = document.querySelector('.navbarss');
+                var navbar = document.querySelector('.custom-navbar');
 
-                // Check if banner and navbar exist
                 if (!banner || !navbar) {
                     console.error('Banner or Navbar not found');
                     return;
                 }
 
-                // Check if the scroll position is inside the banner section
                 if (window.scrollY >= banner.offsetTop && window.scrollY <= (banner.offsetTop + banner.offsetHeight)) {
-                    console.log('Inside Banner - Adding transparent class');
-                    navbar.classList.add('navbar-transparent');  // Add transparent class
-                    navbar.classList.remove('navbar-scrolled');  // Remove scrolled class
+                    navbar.classList.add('navbar-transparent');
+                    navbar.classList.remove('navbar-scrolled');
                 } else {
-                    console.log('Scrolled past Banner - Adding scrolled class');
-                    navbar.classList.remove('navbar-transparent');  // Remove transparent class
-                    navbar.classList.add('navbar-scrolled');  // Add scrolled class
+                    navbar.classList.remove('navbar-transparent');
+                    navbar.classList.add('navbar-scrolled');
                 }
             });
         });

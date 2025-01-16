@@ -54,7 +54,7 @@ html {font-size: 15px;
 }
 body {font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; font-size:14px; color:#6f6f6f; font-weight: 400;line-height: 24px;}
 body, html {height: 100%; -moz-osx-font-smoothing: grayscale;}
-a, a:active, a:focus {color: #6f6f6f; text-decoration: none;}
+a, a:active, a:focus {color:white; text-decoration: none;}
 a:hover, a:active{color: var(--base-color); text-decoration: none;}
 a:focus, a:active, button:focus, button:active,.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: none; box-shadow: none;}
 img {max-width:100%; height:auto;}
@@ -305,7 +305,7 @@ a.text-very-light-gray-hover:hover {color:#ededed !important;}
 /* ===================================
     05. Custom
 ====================================== */
-section {padding: 30px 0; overflow: hidden;}
+section {overflow: hidden;}
 section.big-section {padding:160px 0;}
 section.extra-big-section {padding:200px 0;}
 section.half-section {padding:80px 0;}
@@ -2300,13 +2300,13 @@ header nav.menu-logo-center .navbar-nav > li:last-child a {margin-right: 35px}
 header nav.navbar a:not([href]):not([tabindex]):focus, header nav.navbar a:not([href]):not([tabindex]):hover {cursor: pointer;}
 
 /* header navigation color and logo */
-header nav.navbar .navbar-nav > li > a, nav.navbar.bootsnav ul.nav > li > a{color:white; cursor: pointer;}
+/* header nav.navbar .navbar-nav > li > a, nav.navbar.bootsnav ul.nav > li > a{color:white; cursor: pointer;} */
 header nav.navbar.white-link .navbar-nav > li > a, nav.navbar.bootsnav.white-link ul.nav > li > a,
 header nav.navbar.white-link .header-social-icon a,  nav.navbar.bootsnav.white-link .header-social-icon a,
 header nav.navbar.white-link .header-searchbar a,  nav.navbar.bootsnav.white-link .header-searchbar a,
 header nav.navbar.bootsnav ul.nav.white-link > li > a,  nav.navbar.white-link .heder-menu-button a {
-/* custome     */
-    /* color: #333131 */
+
+    color: #000000
 
 }
 
@@ -2317,7 +2317,7 @@ header.sticky nav.navbar-fixed-top.header-light.white-link .navbar-nav > li > a,
 header.sticky nav.navbar-fixed-top.header-light.white-link .header-searchbar a,
 header.sticky nav.navbar-fixed-top.header-light.white-link .header-social-icon a,
 header.sticky nav.navbar-fixed-top.header-light.white-link .header-menu-button a,
-header.sticky nav.navbar-fixed-top.header-light.white-link .header-menu-button a {color: #232323}
+/* header.sticky nav.navbar-fixed-top.header-light.white-link .header-menu-button a {color:white} */
 
 header .logo .logo-dark, header .logo .logo-light {visibility: hidden; opacity: 0; width: 0; transition-duration: 0.5s; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s;}
 header .logo .logo-dark.default, header .logo .logo-light.default {visibility: visible; opacity: 1; width: auto; transition-duration:0.5s;  -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s;}
@@ -2484,8 +2484,8 @@ header.sticky nav.header-light-transparent .heder-menu-button .mobile-toggle spa
 header.header-appear nav.header-dark-transparent, header.sticky nav.navbar-fixed-top.header-dark-transparent, header.sticky nav.navbar-scroll-fixed-top.header-dark-transparent {background: rgba(23, 23, 23, 0.85);}
 header.header-appear nav.header-dark-transparent .separator-line-verticle-small, header.header-appear nav.header-dark .separator-line-verticle-small {background: #ffffff}
 header.header-appear nav.header-dark-transparent .navbar-nav > li > a, header.header-appear nav.header-dark .navbar-nav > li > a, header.sticky nav.header-dark .navbar-nav > li > a
-header.header-appear nav.header-dark-transparent .header-social-icon a, header.header-appear nav.header-dark .header-social-icon a, header.sticky nav.header-dark .header-social-icon a, header.sticky nav.header-dark-transparent .header-social-icon a{color: #ffffff}
-header.header-appear nav.header-dark-transparent .search-button, header.header-appear nav.header-dark-transparent .right-menu-button, header.header-appear nav.header-dark .search-button, header.header-appear nav.header-dark .right-menu-button, header.sticky nav.header-dark .search-button, header.sticky nav.header-dark .right-menu-button, header.sticky nav.header-dark-transparent .search-button, header.sticky nav.header-dark-transparent .right-menu-button{color:#ffffff}
+header.header-appear nav.header-dark-transparent .header-social-icon a, header.header-appear nav.header-dark .header-social-icon a, header.sticky nav.header-dark .header-social-icon a, header.sticky nav.header-dark-transparent
+header.header-appear nav.header-dark-transparent .search-button, header.header-appear nav.header-dark-transparent .right-menu-button, header.header-appear nav.header-dark .search-button, header.header-appear nav.header-dark .right-menu-button, header.sticky nav.header-dark .search-button, header.sticky nav.header-dark .right-menu-button, header.sticky nav.header-dark-transparent .search-button, header.sticky nav.header-dark-transparent .right-menu-button{color:black}
 header.sticky nav.header-dark-transparent .header-social-icon, header.sticky nav.header-dark .header-social-icon,header.sticky nav.header-dark-transparent .header-searchbar, header.sticky nav.header-dark .header-searchbar {border-left: 1px solid rgba(255,255,255,0.4);}
 header.sticky nav.header-dark-transparent .mobile-toggle span, header.sticky .header-dark  .mobile-toggle span {background: #fff;}
 header.sticky nav.header-dark-transparent .mobile-toggle:hover span, header.sticky .header-dark .mobile-toggle:hover span {background: red;}
@@ -2593,7 +2593,7 @@ header nav.nav-box-width {padding: 0 50px;}
 .big-menu-close {background: #fff; position: absolute; right: 0; width: 40px; height: 40px; color: #232323;}
 
 /* dropdown menu */
-nav.navbar.navbar-default ul.nav > li > a {padding:20px 0; background: transparent; border-color: transparent; font-weight: 600; display: block;color: #000;}
+/* nav.navbar.navbar-default ul.nav > li > a {padding:20px 0; background: transparent; border-color: transparent; font-weight: 600; display: block;color:white;} */
 nav.navbar.navbar-default ul.nav > li.dropdown > a.dropdown-toggle::after, nav.navbar.sidebar-nav ul.nav > li.dropdown > a.dropdown-toggle::after {content: ""; vertical-align: middle; position: relative; top: -1px; margin-top: 0;}
 nav.navbar.navbar-default ul li.dropdown ul.dropdown-menu > li:last-child {border-bottom: 0; border-bottom: 0;}
 nav.navbar.navbar-default ul li.dropdown .dropdown-menu li > a:hover  {color: #fff; background:  transparent; left: 5px;}
