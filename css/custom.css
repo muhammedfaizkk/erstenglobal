@@ -209,6 +209,7 @@ height: 300px;
         text-align: center;
     }
 
+
     .footer-links a {
         font-size: 14px;
     }
@@ -217,4 +218,7 @@ height: 300px;
         width: 140px;
         margin-top: 10px;
     }
+    .feature-box{
+        height: 250px;
+        }
 }

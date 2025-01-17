@@ -54,7 +54,7 @@ html {font-size: 15px;
 }
 body {font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; font-size:14px; color:#6f6f6f; font-weight: 400;line-height: 24px;}
 body, html {height: 100%; -moz-osx-font-smoothing: grayscale;}
-a, a:active, a:focus {color:white; text-decoration: none;}
+a, a:active, a:focus {text-decoration: none;}
 a:hover, a:active{color: var(--base-color); text-decoration: none;}
 a:focus, a:active, button:focus, button:active,.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: none; box-shadow: none;}
 img {max-width:100%; height:auto;}
@@ -2304,11 +2304,11 @@ header nav.navbar a:not([href]):not([tabindex]):focus, header nav.navbar a:not([
 header nav.navbar.white-link .navbar-nav > li > a, nav.navbar.bootsnav.white-link ul.nav > li > a,
 header nav.navbar.white-link .header-social-icon a,  nav.navbar.bootsnav.white-link .header-social-icon a,
 header nav.navbar.white-link .header-searchbar a,  nav.navbar.bootsnav.white-link .header-searchbar a,
-header nav.navbar.bootsnav ul.nav.white-link > li > a,  nav.navbar.white-link .heder-menu-button a {
+/* header nav.navbar.bootsnav ul.nav.white-link > li > a,  nav.navbar.white-link .heder-menu-button a {
 
     color: #000000
 
-}
+} */
 
 header.sticky nav.navbar-fixed-top.header-light-transparent.white-link .navbar-nav > li > a,
 header.sticky nav.navbar-fixed-top.header-light-transparent.white-link .header-searchbar a,
@@ -2319,8 +2319,8 @@ header.sticky nav.navbar-fixed-top.header-light.white-link .header-social-icon a
 header.sticky nav.navbar-fixed-top.header-light.white-link .header-menu-button a,
 /* header.sticky nav.navbar-fixed-top.header-light.white-link .header-menu-button a {color:white} */
 
-header .logo .logo-dark, header .logo .logo-light {visibility: hidden; opacity: 0; width: 0; transition-duration: 0.5s; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s;}
-header .logo .logo-dark.default, header .logo .logo-light.default {visibility: visible; opacity: 1; width: auto; transition-duration:0.5s;  -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s;}
+/* header .logo .logo-dark, header .logo .logo-light {visibility: hidden; opacity: 0; width: 0; transition-duration: 0.5s; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s;} */
+header .logo .logo-dark.default, header .logo .logo-light.default {visibility: visible; opacity: 1; width: auto; transition-duration:0.5s;  -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s;background-color: ;}
 header.sticky nav.header-dark-transparent .logo .logo-light, header.sticky nav.header-dark .logo .logo-light {visibility: visible;  opacity: 1; width: auto; transition-duration: 0.5s; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s;}
 header.sticky nav.header-dark-transparent .logo .logo-dark, header.sticky nav.header-dark .logo .logo-dark {visibility: hidden; opacity: 0; width: 0; transition-duration:0.5s; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s;}
 header.sticky nav.header-light-transparent .logo .logo-dark, header.sticky nav.header-light .logo .logo-dark {visibility: visible;  opacity: 1; width: auto; transition-duration:0.5s; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s;}
@@ -2386,7 +2386,7 @@ header nav.navbar [class*="col-"], header nav.navbar [class^=" col-"] {padding-l
 header nav.navbar-default, nav.navbar.bootsnav {border-bottom: 0;}
 header nav {width: 100%; top: 0px; z-index: 99; margin-bottom: 0;}
 header nav .nav-header-container {position: relative;}
-header nav .navbar-nav > li > a {color: #232323; font-size: 12px; font-weight: 800; margin:0 20px; padding: 5px 0px 5px; text-transform: uppercase; letter-spacing: 0.015em;}
+/* header nav .navbar-nav > li > a {color: #232323; font-size: 12px; font-weight: 800; margin:0 20px; padding: 5px 0px 5px; text-transform: uppercase; letter-spacing: 0.015em;} */
 header nav .navbar-nav > li > a:hover, header nav .navbar-nav > li > a:focus, header nav .navbar-nav > li.active > a {background: transparent;}
 header nav .navbar-nav > li:last-child a {margin-right: 40px;}
 .navbar-fixed-bottom, .navbar-fixed-top {z-index: 9999}

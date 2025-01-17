@@ -4,12 +4,11 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding:10px 0px !important;
+    padding: 10px 0px !important;
     z-index: 999;
-    color: (var(--bs-light-rgb),var(--bs-bg-opacity))!important ;
+    color: (var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-    
 }
 
 /* Transparent Navbar on Banner */
@@ -21,7 +20,7 @@
 
 /* Solid Background on Scroll */
 .custom-navbar.navbar-scrolled {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1) !important;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     color: black !important;
 }
@@ -55,7 +54,7 @@
 
 /* Link Colors */
 .custom-navbar a {
-    color: #333;
+    color: white;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -80,4 +79,14 @@
 .bahrain-flag-mark span {
     font-size: 14px;
     color: #333;
+}
+
+/* Media Query for Screen Width Below 768px */
+@media (max-width: 768px) {
+    nav.navbar.bootsnav .navbar-nav {
+        margin: 0;
+        padding: 0;
+        background-color: rgba(23, 23, 23, 0.95);
+        padding-right: 1px;
+    }
 }
