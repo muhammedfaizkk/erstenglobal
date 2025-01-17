@@ -165,7 +165,14 @@ height: 300px;
 .feature-box-image img{
     border-radius:10px;
 }
+.footerlinks{
+    font-size: 14px;
+}
+.firstvertic{
+    height:214px !important;
+    width:360px !important;
 
+}
 /* Responsive Design for Smaller Screens */
 @media (max-width: 767px) {
     .footer-links .col {
