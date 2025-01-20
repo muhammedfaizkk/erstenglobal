@@ -173,6 +173,17 @@ height: 300px;
     width:360px !important;
 
 }
+.clients-img{
+    height:auto;
+    width: 350px !important;
+}
+.client-divider {
+    border: 0;
+    height: 1px;
+    background-color: #ccc; /* You can change this to your desired color */
+    margin: 30px 0; /* Adjust the spacing as needed */
+}
+
 /* Responsive Design for Smaller Screens */
 @media (max-width: 767px) {
     .footer-links .col {

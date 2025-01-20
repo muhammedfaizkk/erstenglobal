@@ -4,9 +4,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 0px !important;
+    padding: 10px 0 !important;
     z-index: 999;
-    color: (var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+    color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
@@ -79,6 +79,54 @@
 .bahrain-flag-mark span {
     font-size: 14px;
     color: #333;
+}
+
+/* Simple Dropdown Positioning */
+.simple-dropdown {
+    position: relative;
+}
+
+/* Simple Dropdown Menu */
+.simple-dropdown .dropdown-menu {
+    position: absolute;
+    top:40px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent dropdown initially */
+    min-width: 220px;
+    padding: 15px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dropdown Links */
+.simple-dropdown .dropdown-menu > li > a {
+    font-size: 12px;
+    color: white;
+    padding: 9px 0 7px;
+    display: block;
+    font-weight: 500;
+    line-height: 1.42857143;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.simple-dropdown .dropdown-menu > li > a:hover {
+    background-color: #05dc13;
+    color: #fff;
+}
+
+/* Dropdown Menu on Scroll */
+.navbar-scrolled .simple-dropdown .dropdown-menu {
+    background: rgba(255, 255, 255, 1); /* Solid white on scroll */
+    color: black;
+}
+
+/* Dropdown Links on Scroll */
+.navbar-scrolled .simple-dropdown .dropdown-menu > li > a {
+    color: black;
+}
+
+.navbar-scrolled .simple-dropdown .dropdown-menu > li > a:hover {
+    background-color: #05dc13;
+    color: #fff;
 }
 
 /* Media Query for Screen Width Below 768px */
